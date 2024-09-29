@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro mascotas</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input [tipe="submit"] {
+            width: 50%;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario registro de Futbolistas</h1>
+    <form>
+        <label for="nombre">Nombre del jugador:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="psicion">Posicion del jugador</label>
+        <select name="posicion" id="posicion">
+        <option value="Delantero">Delantero</option>
+        <option value="Delantero">Mediocampista</option>
+        <option value="Delantero">Defensa</option>
+        <option value="Delantero">Portero</option>
+    </select>
+
+        <label for="vacunado">¿esta lecionado?</label>
+        <input type="checkbox" id="vacunado" name="vacunado"> si
+
+        <label for="sexo"></label>
+        <input type="radio" id="Femenino" name="sexo" value="sexo">Femenino
+        <input type="radio" id="Masculino" name="sexo" value="sexo">Masculino
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
